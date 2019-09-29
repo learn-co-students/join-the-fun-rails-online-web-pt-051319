@@ -4,6 +4,7 @@ describe Ride do
   let(:ride) { subject }
 
   it 'belongs to a passenger' do
+    ride = Ride.create
     passenger = Passenger.create
     ride.passenger = passenger
     ride.save
@@ -12,6 +13,7 @@ describe Ride do
   end
 
   it 'belongs to a taxi' do
+    ride = Ride.create
     taxi = Taxi.create
     ride.taxi = taxi
     ride.save
