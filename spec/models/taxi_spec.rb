@@ -13,7 +13,7 @@ describe Taxi do
   end
 
   it 'has many rides' do
-    taxi = Taxi.creatte
+    taxi = Taxi.create
     ride = Ride.create
     taxi.rides << ride
     taxi.save
